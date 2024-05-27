@@ -9,6 +9,10 @@ html, body{
     height: 100%;
 }
 
+@font-face {
+    font-family: 'cursive';
+    src: url(./assets/Creattion_Demo.otf);
+}
 body{
     background-color: rgb(214, 214, 201);
 }
@@ -72,6 +76,7 @@ main{
 
 
 .box-2{
+    width: 80%;
     /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
@@ -82,7 +87,7 @@ main{
 }
 
 .box-2 .img{
-    width: 50%;
+    width: 60%;
     height: 60%;
     background: url(./assets/9df6a2_357470e982314374956311697e62e351~mv2.webp);
     background-size: cover;
@@ -125,5 +130,31 @@ main{
 }
 
 .box-3{
+    width: 120%;
     background-color: brown;
+    display: flex;
+    /* justify-content: end; */
+    /* justify-content: center; */
+    padding: 60px;
+}
+
+.box-3 .img1{
+    width: 45%;
+    height: 60%;
+    background: url(./assets/fdbf5ef6bae7a70089d3e3ffbb1bea6b.jpg);
+    background-size: cover;
+    background-position:50% 80%;
+    position: relative;
+    margin-left: 50%;
+}
+
+.box-3 .img1::after{
+    position: absolute;
+    content: "For Women Loot";
+    top: 40%;
+    right: -75%;
+    transform: rotate(270deg);
+    font-family: 'cursive';
+    font-weight: 500;
+    font-size: 4rem;
 }
